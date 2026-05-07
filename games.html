@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insect Exhibit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="no-scroll-page games-bg">
+
+
+<nav class="navbar">
+  <div class="logo">🪲 INSECTS MUSEUM</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="trivia.html">TRIVIA</a></li>
+    <li><a href="games.html">GAMES</a></li>
+  </ul>
+</nav>
+
+<!-- ✅ MAIN PAGE -->
+<section class="games-page">
+
+  <h1 class="games-title">GAMES</h1>
+  <p class="games-sub">LEARN WHILE HAVING FUN!</p>
+
+  <div class="games-grid">
+
+    <!-- GAME 1 -->
+    <div class="game-card">
+      <h3>CATCH THE INSECTS</h3>
+      <img src="images/insect.jpg" alt="Catch the Insects">
+      <p>Catch as many insects as you can before time runs out!</p>
+      <button class="play-btn" onclick="openGameMenu()">PLAY NOW</button>
+      
+    </div>
+
+    <!-- GAME 2 -->
+    <div class="game-card">
+      <h3>QUIZ CHALLENGE</h3>
+      <img src="images/quiz.png" alt="Quiz Challenge">
+      <p>Test your knowledge about insects.</p>
+      <button class="play-btn" onclick="openQuiz()">PLAY NOW</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GAME OVERLAY (EMPTY MUNA) -->
+<div id="game-screen" class="game-hidden"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

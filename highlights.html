@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Insect Exhibit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class ="no-scroll-page">
+
+<nav class="navbar">
+  <div class="logo">🪲 INSECTS MUSEUM</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="trivia.html">TRIVIA</a></li>
+    <li><a href="games.html">GAMES</a></li>
+  </ul>
+</nav>
+
+<!-- HEADER -->
+<section class="exhibit-header">
+  <h1>10 AMAZING INSECTS</h1>
+  <p>Explore the remarkable species of the insect world</p>  
+</section>
+
+<section class="highlight-page">
+<div class="exhibit-wrapper">
+
+<!-- GRID -->
+<div class="exhibit-grid">
+
+  <!-- SAMPLE CARD -->
+  <div class="exhibit-card"
+    data-name="Monarch Butterfly"
+    data-img="images/Insects/thumbs/butterfly.jpg"
+    data-full="images/Insects/full/mb.jpg"
+    data-latin="Danaus plexippus"
+    data-habitat="Fields, meadows"
+    data-diet="Nectar"
+    data-behavior="Migratory  ">
+  </div>
+
+ <div class="exhibit-card"
+    data-name="Western Honey Bee"
+    data-img="images/Insects/thumbs/bee.jpg"
+    data-full="images/Insects/full/wb.jpg"
+    data-latin="Apis mellifera"
+    data-habitat=" Forests, gardens, agricultural areas"
+    data-diet="Nectar and pollen"
+    data-behavior="Highly social; lives in colonies with queen, workers, and drones">
+  </div>
+
+  <div class="exhibit-card"
+    data-name="Seven-Spotted Lady Beetle"
+    data-img="images/Insects/thumbs/lady-beetle.jpg"
+    data-full="images/Insects/full/lb.jpg"
+    data-latin="Coccinella septempunctata"
+    data-habitat=" Gardens, farms, grasslands"
+    data-diet="Carnivore (aphids and small insects)"
+    data-behavior="Active predator; helps control pest populations">
+  </div>
+
+  <div class="exhibit-card"
+    data-name="Desert Locust"
+    data-img="images/Insects/thumbs/locust.jpg"
+    data-full="images/Insects/full/dl.jpg"
+    data-latin="Schistocerca gregaria"
+    data-habitat="Deserts and semi-arid regions"
+    data-diet="Herbivore (plants and crops)"
+    data-behavior="Forms massive swarms that migrate long distances">
+  </div>
+
+  <div class="exhibit-card"
+    data-name="Leafcutter Ant"
+    data-img="images/Insects/thumbs/ant.jpg"
+    data-full="images/Insects/full/la.jpg"
+    data-latin="Atta cephalotes"
+    data-habitat="Tropical rainforests"
+    data-diet="Fungus (grown from collected leaves)"
+    data-behavior="Highly organized; divides labor among colony members">
+  </div>
+
+  <div class="exhibit-card"
+    data-name="Hercules Beetle"
+    data-img="images/Insects/thumbs/h-beetle.jpg"
+    data-full="images/Insects/full/hb.jpg"
+    data-latin="Dynastes hercules"
+    data-habitat="Tropical rainforests (Central and South America)"
+    data-diet="Decaying fruit and plant matter"
+    data-behavior="Males fight using large horns to compete for mates">
+  </div>
+
+  <div class="exhibit-card"
+    data-name="Aedes Mosquito"
+    data-img="images/Insects/thumbs/mosquito.jpg"
+    data-full="images/Insects/full/am.jpg"
+    data-latin="Aedes aegypti"
+    data-habitat="Urban and tropical environments"
+    data-diet="Nectar (males), blood (females)"
+    data-behavior="Active during daytime; attracted to humans">
+  </div>
+  <div class="exhibit-card"
+    data-name="Silkworm"
+    data-img="images/Insects/thumbs/silkworm.jpg"
+    data-full="images/Insects/full/sm.jpg"
+    data-latin="Bombyx mori"
+    data-habitat=" Domesticated; raised by humans"
+    data-diet="Mulberry leaves"
+    data-behavior="Spins silk cocoon during pupal stage">
+  </div>
+  <div class="exhibit-card"
+    data-name="Atlas Moth"
+    data-img="images/Insects/thumbs/moth.jpg"
+    data-full="images/Insects/full/atlas.jpg"
+    data-latin="Attacus atlas"
+    data-habitat="Tropical forests in Southeast Asia"
+    data-diet=" Does not eat in adult stage"
+    data-behavior="Short-lived; focuses only on reproduction">
+  </div>
+  <div class="exhibit-card"
+    data-name="American Cockroach"
+    data-img="images/Insects/thumbs/cockroach.jpg"
+    data-full="images/Insects/full/ipis.jpg"
+    data-latin="Periplaneta americana"
+    data-habitat="Warm, humid areas; urban environments"
+    data-diet="Omnivore (decaying matter, food scraps)"
+    data-behavior="Nocturnal; fast-moving scavenger">
+  </div>
+
+
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+
+  <!-- 🔥 BACK ARROW -->
+  <div class="back-btn">❮</div>
+
+  <div class="modal-card">
+
+  
+  
+
+    <!-- 🔥 HEADER -->
+    <div class="modal-header">
+      <h2 id="panel-title">Insect Name</h2>
+      <p class="latin-name" id="panel-latin">Scientific Name</p>
+    </div>
+
+    <!-- 🔥 CENTERED CONTENT -->
+    <div class="modal-content">
+
+      <!-- IMAGE -->
+      <div class="modal-image">
+        <img id="panel-img" src="" alt="">
+      </div>
+
+      <!-- INFO -->
+      <div class="modal-info">
+
+        <div class="info-box">
+  <h4>
+    <span class="icon">
+      <!-- LEAF ICON -->
+      <svg viewBox="0 0 24 24">
+        <path d="M5 21c6-1 12-6 14-14C11 9 6 15 5 21z"/>
+      </svg>
+    </span>
+    Habitat
+  </h4>
+  <p id="panel-habitat"></p>
+</div>
+
+<div class="info-box">
+  <h4>
+    <span class="icon">
+      <!-- NECTAR / FOOD ICON -->
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2c2 3 5 5 5 9a5 5 0 1 1-10 0c0-4 3-6 5-9z"/>
+      </svg>
+    </span>
+    Diet
+  </h4>
+  <p id="panel-diet"></p>
+</div>
+
+<div class="info-box">
+  <h4>
+    <span class="icon">
+      <!-- PEOPLE ICON -->
+      <svg viewBox="0 0 24 24">
+        <path d="M16 11a4 4 0 1 0-8 0 4 4 0 0 0 8 0zM4 20a6 6 0 0 1 16 0"/>
+      </svg>
+    </span>
+    Behavior
+  </h4>
+  <p id="panel-behavior"></p>
+</div>
+
+      </div>
+
+      
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</div>
+</section>
+
+</body>
+</html>
